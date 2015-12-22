@@ -7,6 +7,11 @@ use App\Location;
 use Illuminate\Http\Request;
 
 class ApiController extends Controller {
+
+	public function __construct() {
+		$this->middleware('cors');
+	}
+
 	/**
 	 * Display a listing of the resource.
 	 *
